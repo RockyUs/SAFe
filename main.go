@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/freshman-tech/news-demo/news"
+	"github.com/RockyUS/SAFe/news"
 	"github.com/joho/godotenv"
 )
 
