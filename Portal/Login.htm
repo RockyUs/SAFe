@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>Portal</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="shortcut icon" href="<%= CssStyleSettings.GetPortalIconPath("portal.ico") %>?v=2" type="image/x-icon" />
+		<link rel="icon" href="<%= CssStyleSettings.GetPortalIconPath("portal.ico") %>?v=2" type="image/x-icon" />
+  </head>
+ 	<body class="loginBody" onload="window_onload()" onbeforeunload="window_unload()">
+        <div id="logo"></div>
+		<form id="Login" method="post" runat="server" onsubmit="if(!this.f_is_submitted) { this.f_is_submitted = true; return true }; return false;">
+			<input type="hidden" id="safariClosed" value="false" />
+		    <asp:Panel id="ContentPane" runat="server" />
+		</form>
+        <div id="topActionsMenu">
+            <div id="backToStartPageButton">
+                <a href="<%= StartPageUrl %>"></a>
+            </div>
+        </div>
+	</body>
+</html> 
